@@ -7,7 +7,9 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('login');
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('Server started on 3000..');
+});
